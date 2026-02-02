@@ -6,11 +6,13 @@ function FindUser() {
     <div>
       <h2>Find User</h2>
       <form action="">
-        <label htmlFor="searchBox">Search</label>
+        <label htmlFor="searchBox"></label>
         <input
           type="text"
           name="search_box"
           id="searchBox"
+          className="github-input"
+          placeholder="Search GitHub username..."
           onChange={(e) => setUsername(e.target.value)}
         />
       </form>

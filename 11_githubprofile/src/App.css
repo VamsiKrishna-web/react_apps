@@ -45,6 +45,77 @@ body {
   background-color: #1f2429;
   color: white;
 }
+.github-input {
+  background-color: #0d1117; /* Dark background */
+  color: #c9d1d9; /* Light text */
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  margin-bottom: 20px;
+}
+
+/* The Focus Effect */
+.github-input:focus {
+  border-color: #58a6ff; /* GitHub Blue */
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+/* Placeholder color */
+.github-input::placeholder {
+  color: #8b949e;
+}
+/* Container for the profile */
+.profile-card {
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  max-width: 400px;
+  margin: 15px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #30363d;
+  margin-bottom: 1rem;
+}
+/* The Button Styling */
+.checkout-btn {
+  display: inline-block;
+  background-color: #238636; /* GitHub Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  margin-top: 15px;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+}
+.checkout-btn:hover {
+  background-color: #2ea44f; /* Lighter green on hover */
+  transform: translateY(-1px);
+}
+
+.checkout-btn:active {
+  background-color: #269a45;
+  transform: translateY(0);
+}
 
 @keyframes spin {
   0% {

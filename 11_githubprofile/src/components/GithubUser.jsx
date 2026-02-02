@@ -12,6 +12,7 @@ function GithubUser({ username }) {
     animation: "spin 1s linear infinite",
     margin: "10px auto",
   };
+
   return (
     <div style={{ padding: "20px", textAlign: "center" }}>
       {/* Loading */}
@@ -28,8 +29,8 @@ function GithubUser({ username }) {
       {!userdata && !error && !loading && <p>Please Initiate Search</p>}
 
       {!loading && userdata && (
-        <div>
-          <img src={userdata.avatar_url} alt="avatar" width="100" />
+        <div className="profile-card">
+          <img src={userdata.avatar_url} alt="avatar"  className="profile-avatar" />
           <h2>User: {userdata.login}</h2>
           <p>
             {" "}
@@ -50,6 +51,14 @@ function GithubUser({ username }) {
             <strong>Bio:</strong>
             {userdata.bio}
           </p>
+          <a
+            href={userdata.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="checkout-btn"
+          >
+            View GitHub Profile
+          </a>
         </div>
       )}
     </div>
