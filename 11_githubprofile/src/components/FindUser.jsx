@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GithubUser from "./githubUser";
+import GithubUser from "./GithubUser";
 function FindUser() {
   const [username, setUsername] = useState("");
   return (
